@@ -1,7 +1,9 @@
 // Palindrome
 // https://leetcode.com/problems/valid-palindrome/
+// easy
 // Проверить, является ли строка палиндромом, игнорировать пробелы и регистр
 
+//O(n)
 function isPalindrome(s) {
   const clean = s.toLowerCase().replace(/[^a-z0-9]/gi, '');
   const len = clean.length;
@@ -13,3 +15,5 @@ function isPalindrome(s) {
   }
   return true;
 }
+
+console.log(isPalindrome('A man, a plan, a canal: Panama')); //true
