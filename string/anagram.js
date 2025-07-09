@@ -1,7 +1,8 @@
 // Anagram
+
 // https://leetcode.com/problems/valid-anagram/
 // easy
-// Проверить, является ли строка t анаграммой строки s
+// Check if strings are anagrams
 
 // O(n)
 function isAnagram(s, t) {

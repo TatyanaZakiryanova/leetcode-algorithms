@@ -1,7 +1,8 @@
 // Palindrome
+
 // https://leetcode.com/problems/valid-palindrome/
 // easy
-// Проверить, является ли строка палиндромом, игнорировать пробелы и регистр
+// Check if a string is a palindrome
 
 //O(n)
 function isPalindrome(s) {
