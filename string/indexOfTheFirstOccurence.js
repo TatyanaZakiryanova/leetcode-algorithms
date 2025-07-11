@@ -5,7 +5,7 @@
 // Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack
 
 // Solution: sliding window
-// O(n*m)
+// O(n * m)
 function strStr(haystack, needle) {
   const hLen = haystack.length;
   const nLen = needle.length;
