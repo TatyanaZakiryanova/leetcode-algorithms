@@ -4,6 +4,7 @@
 // easy
 // Check if strings are anagrams
 
+// Solution: hashmap
 // O(n)
 function isAnagram(s, t) {
   const normalize = (s) => s.toLowerCase().replace(/[^a-z0-9]/gi, '');
