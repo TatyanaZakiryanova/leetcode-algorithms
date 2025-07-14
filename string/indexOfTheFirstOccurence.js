@@ -36,3 +36,23 @@ function strStr(haystack, needle) {
 
 console.log(strStr('sadbutsad', 'sad')); // 0
 console.log(strStr('leetcode', 'leeto')); // -1
+
+// Solution: sliding window
+// O(n * m)
+function strStr2(haystack, needle) {
+  const hLen = haystack.length;
+  const nLen = needle.length;
+
+  if (nLen === 0) return 0;
+
+  for (let i = 0; i <= hLen - nLen; i++) {
+    if (haystack.slice(i, i + nLen) === needle) {
+      return i;
+    }
+  }
+
+  return -1;
+}
+
+console.log(strStr2('sadbutsad', 'sad')); // 0
+console.log(strStr2('leetcode', 'leeto')); // -1

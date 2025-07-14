@@ -10,6 +10,7 @@ Algorithmic problems solved in JS, grouped by topic.
 ## 📁 Topics
 
 ```bash
+├── array
 ├── string
 ```
 
