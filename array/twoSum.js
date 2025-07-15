@@ -5,6 +5,7 @@
 // Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target
 
 // Solution: hashmap
+// O(n)
 function twoSum(nums, target) {
   const map = new Map();
 
