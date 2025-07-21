@@ -5,6 +5,7 @@
 // Remove duplicates from sorted array in-place
 
 // Solution: two pointers
+// O(n)
 function removeDuplicates(nums) {
   if (nums.length === 0) return 0;
 
