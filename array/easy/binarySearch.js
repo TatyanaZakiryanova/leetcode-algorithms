@@ -1,5 +1,8 @@
 // Binary search
 
+// https://leetcode.com/problems/binary-search/
+// easy
+
 // O(log n)
 function binarySearch(nums, target) {
   let left = 0;
