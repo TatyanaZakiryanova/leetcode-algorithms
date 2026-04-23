@@ -7,52 +7,18 @@
 // Solution: sliding window
 // O(n * m)
 function strStr(haystack, needle) {
-  const hLen = haystack.length;
-  const nLen = needle.length;
+  if (needle === '') return 0;
 
-  if (nLen === 0) {
-    return 0;
-  }
+  for (let i = 0; i <= haystack.length - needle.length; i++) {
+    let j = 0;
 
-  let i = 0;
-  while (i < hLen) {
-    let nIndex = 0;
-    let j = i;
-
-    while (j < hLen && nIndex < nLen && haystack[j] === needle[nIndex]) {
+    while (j < needle.length && haystack[i + j] === needle[j]) {
       j++;
-      nIndex++;
     }
-
-    if (nIndex === nLen) {
-      return i;
-    }
-
-    i++;
+    if (j === needle.length) return i;
   }
-
   return -1;
 }
 
 console.log(strStr('sadbutsad', 'sad')); // 0
 console.log(strStr('leetcode', 'leeto')); // -1
-
-// Solution: sliding window
-// O(n * m)
-function strStr2(haystack, needle) {
-  const hLen = haystack.length;
-  const nLen = needle.length;
-
-  if (nLen === 0) return 0;
-
-  for (let i = 0; i <= hLen - nLen; i++) {
-    if (haystack.slice(i, i + nLen) === needle) {
-      return i;
-    }
-  }
-
-  return -1;
-}
-
-console.log(strStr2('sadbutsad', 'sad')); // 0
-console.log(strStr2('leetcode', 'leeto')); // -1
